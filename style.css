@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #eef2f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    min-height: 100vh;
+    direction: rtl; /* دعم اللغة العربية */
+}
+
+.container {
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+    max-width: 600px;
+    width: 100%;
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    direction: rtl; /* دعم الكتابة من اليمين لليسار */
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    float: left; /* لتحريك الزر لليسار في واجهة RTL */
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+.response {
+    margin-top: 15px;
+    text-align: right;
+    font-size: 16px;
+    background: #f1f3f6;
+    padding: 12px;
+    border-radius: 8px;
+    min-height: 60px;
+    white-space: pre-wrap;
+    clear: both;
+}
+
+.history {
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 0; /* تصحيح لـ RTL */
+    padding-left: 0;
+}
+
+.history li {
+    list-style: none;
+    background: #f9fafb;
+    margin-bottom: 6px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    border-right: 4px solid #4f46e5; /* تغيير الـ border-left إلى border-right */
+}
